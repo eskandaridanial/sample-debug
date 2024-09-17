@@ -91,24 +91,24 @@ const Document = () => {
                         resourceDoc.method === 'GET'
                           ? '#40A69F'
                           : resourceDoc.method === 'POST'
-                          ? '#4AD15F'
-                          : resourceDoc.method === 'PUT'
-                          ? '#F4C542'
-                          : resourceDoc.method === 'DELETE'
-                          ? '#E57373'
-                          : 'defaultColor',
+                            ? '#4AD15F'
+                            : resourceDoc.method === 'PUT'
+                              ? '#F4C542'
+                              : resourceDoc.method === 'DELETE'
+                                ? '#E57373'
+                                : 'defaultColor',
                     }}
                     label={resourceDoc.method}
                     color={
                       resourceDoc.method === 'GET'
                         ? 'info'
                         : resourceDoc.method === 'POST'
-                        ? 'success'
-                        : resourceDoc.method === 'PUT'
-                        ? 'warning'
-                        : resourceDoc.method === 'DELETE'
-                        ? 'error'
-                        : 'default'
+                          ? 'success'
+                          : resourceDoc.method === 'PUT'
+                            ? 'warning'
+                            : resourceDoc.method === 'DELETE'
+                              ? 'error'
+                              : 'default'
                     }
                   />
                 </Grid>
@@ -179,6 +179,7 @@ const Document = () => {
                 />
               </Grid>
             </Grid>
+
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <Box
                 sx={{
@@ -224,7 +225,7 @@ const Document = () => {
                       />
                     )}
                   </div>
-                  <pre>{sampleResponseHtml}</pre>
+                  <pre>{sampleRequestHtml}</pre>
                 </Box>
               </Box>
             </div>
@@ -247,7 +248,7 @@ const Document = () => {
                       textAlign: 'left',
                       mb: 1,
                     }}>
-                    نمونه خروحی سرویس
+                    نمونه خروجی سرویس
                   </Typography>
                 </Grid>
 
@@ -274,7 +275,7 @@ const Document = () => {
                       />
                     )}
                   </div>
-                  <pre>{sampleRequestHtml}</pre>
+                  <pre>{sampleResponseHtml}</pre>
                 </Box>
               </Box>
             </div>
